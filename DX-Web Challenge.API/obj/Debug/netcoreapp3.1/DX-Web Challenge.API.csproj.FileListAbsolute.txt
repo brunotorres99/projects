@@ -1,0 +1,57 @@
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.csprojAssemblyReference.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.AssemblyInfoInputs.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.AssemblyInfo.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.API.exe
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.API.deps.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.API.runtimeconfig.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.API.runtimeconfig.dev.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.API.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.API.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.Business.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.Core.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.Data.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.Business.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.Data.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\DX-Web Challenge.Core.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.RazorTargetAssemblyInfo.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.csproj.CopyComplete
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\staticwebassets\DX-Web Challenge.API.StaticWebAssets.Manifest.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\staticwebassets\DX-Web Challenge.API.StaticWebAssets.xml
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.genruntimeconfig.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.csproj.CoreCompileInputs.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.MvcApplicationPartsAssemblyInfo.cache

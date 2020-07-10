@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>DX_Web_Challenge.Business</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DX-Web Challenge.Core\DX-Web Challenge.Core.csproj" />
+    <ProjectReference Include="..\DX-Web Challenge.Data\DX-Web Challenge.Data.csproj" />
+  </ItemGroup>
+
+</Project>

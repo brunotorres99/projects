@@ -1,0 +1,189 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Business\\DX-Web Challenge.Business.csproj": {}
+  },
+  "projects": {
+    "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Business\\DX-Web Challenge.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Business\\DX-Web Challenge.Business.csproj",
+        "projectName": "DX-Web Challenge.Business",
+        "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Business\\DX-Web Challenge.Business.csproj",
+        "packagesPath": "C:\\Users\\wrt\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wrt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj": {
+                "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj"
+              },
+              "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Data\\DX-Web Challenge.Data.csproj": {
+                "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Data\\DX-Web Challenge.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj",
+        "projectName": "DX-Web Challenge.Core",
+        "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj",
+        "packagesPath": "C:\\Users\\wrt\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wrt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Data\\DX-Web Challenge.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Data\\DX-Web Challenge.Data.csproj",
+        "projectName": "DX-Web Challenge.Data",
+        "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Data\\DX-Web Challenge.Data.csproj",
+        "packagesPath": "C:\\Users\\wrt\\.nuget\\packages\\",
+        "outputPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wrt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj": {
+                "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
