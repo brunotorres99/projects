@@ -29,7 +29,9 @@ namespace DX_Web_Challenge.API
             });
 
             services.AddScoped<IContactRepository, ContactRepository>();
+            services.AddScoped<IGroupRepository, GroupRepository>();
             services.AddScoped<IContactService, ContactService>();
+            services.AddScoped<IGroupService, GroupService>();
 
             services.AddControllers();
 

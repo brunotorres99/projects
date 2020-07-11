@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DX-Web Challenge.Data", "DX-Web Challenge.Data\DX-Web Challenge.Data.csproj", "{E4B06284-F610-4DB8-920F-2AD8D11C3602}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DX-Web Challenge.Business", "DX-Web Challenge.Business\DX-Web Challenge.Business.csproj", "{578B2BB8-94DF-4E88-8C03-991B1748607C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DX-Web Challenge.Business", "DX-Web Challenge.Business\DX-Web Challenge.Business.csproj", "{578B2BB8-94DF-4E88-8C03-991B1748607C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DX-Web Challenge.API", "DX-Web Challenge.API\DX-Web Challenge.API.csproj", "{37C1AF98-2B42-407A-AA2D-1F93BCB439A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DX-Web Challenge.API", "DX-Web Challenge.API\DX-Web Challenge.API.csproj", "{37C1AF98-2B42-407A-AA2D-1F93BCB439A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DX-Web Challenge.Core", "DX-Web Challenge.Core\DX-Web Challenge.Core.csproj", "{8951E327-C0A4-4E26-8A1F-AF73DC378674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DX-Web Challenge.Core", "DX-Web Challenge.Core\DX-Web Challenge.Core.csproj", "{8951E327-C0A4-4E26-8A1F-AF73DC378674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DX-Web Challenge.Business.Test", "DX-Web Challenge.Business.Test\DX-Web Challenge.Business.Test.csproj", "{C46B1630-47D2-409A-AA26-10FDF7EE71EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8951E327-C0A4-4E26-8A1F-AF73DC378674}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8951E327-C0A4-4E26-8A1F-AF73DC378674}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8951E327-C0A4-4E26-8A1F-AF73DC378674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46B1630-47D2-409A-AA26-10FDF7EE71EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46B1630-47D2-409A-AA26-10FDF7EE71EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46B1630-47D2-409A-AA26-10FDF7EE71EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46B1630-47D2-409A-AA26-10FDF7EE71EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
