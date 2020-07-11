@@ -40,9 +40,9 @@ namespace DX_Web_Challenge.Business.Services.Impl
             {
                 await _contactRepository.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateConcurrencyException ex)
             {
-                // todo
+                throw;// todo
             }
         }
 

@@ -1,5 +1,9 @@
 ﻿using DX_Web_Challenge.Core.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace DX_Web_Challenge.Data
 {
@@ -16,7 +20,9 @@ namespace DX_Web_Challenge.Data
             {
                 entity.HasKey(c => c.Id);
                 entity.Property(c => c.Id).ValueGeneratedOnAdd();
-                entity.Property(c => c.Name).IsRequired();
+                entity.Property(c => c.FirstName).IsRequired().HasMaxLength(100);
+                entity.Property(c => c.LastName).IsRequired().HasMaxLength(100);
+                entity.Property(p => p.RowVersion).IsConcurrencyToken();
                 entity.HasMany(c => c.ContactGroups).WithOne(c => c.Contact).HasForeignKey(c => c.ContactId);
 
                 // todo
@@ -27,7 +33,8 @@ namespace DX_Web_Challenge.Data
             {
                 entity.HasKey( g=> g.Id);
                 entity.Property(c => c.Id).ValueGeneratedOnAdd();
-                entity.Property(g => g.Name).IsRequired();
+                entity.Property(g => g.Name).IsRequired().HasMaxLength(100);
+                entity.Property(p => p.RowVersion).IsConcurrencyToken();
                 entity.HasMany(g => g.ContactGroups).WithOne(g => g.Group).HasForeignKey(g => g.GroupId);
             });
 
@@ -38,6 +45,20 @@ namespace DX_Web_Challenge.Data
             });
 
             base.OnModelCreating(modelBuilder);
+        }
+
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            ChangeTracker.DetectChanges();
+
+            var modified = ChangeTracker.Entries<IConcurrencyEntity>().Where(x => x.State == EntityState.Added || x.State == EntityState.Modified);
+
+            foreach (var item in modified)
+            {
+                item.Entity.RowVersion = Guid.NewGuid().ToByteArray();
+            }
+
+            return await base.SaveChangesAsync(cancellationToken);
         }
     }
 }

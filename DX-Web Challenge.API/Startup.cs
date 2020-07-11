@@ -70,6 +70,7 @@ namespace DX_Web_Challenge.API
                 endpoints.MapControllers();
             });
 
+            db.Database.EnsureDeleted();
             db.Database.EnsureCreated();
         }
     }
