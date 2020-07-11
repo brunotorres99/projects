@@ -38,7 +38,7 @@ namespace DX_Web_Challenge.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ContactContext db)
         {
             if (env.IsDevelopment())
             {
@@ -69,6 +69,8 @@ namespace DX_Web_Challenge.API
             {
                 endpoints.MapControllers();
             });
+
+            db.Database.EnsureCreated();
         }
     }
 }

@@ -16,7 +16,6 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Mi
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
@@ -55,3 +54,18 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\Sw
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.csproj.CoreCompileInputs.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\obj\Debug\netcoreapp3.1\DX-Web Challenge.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll

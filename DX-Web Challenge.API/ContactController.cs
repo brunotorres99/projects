@@ -18,7 +18,7 @@ namespace DX_Web_Challenge.API
         }
 
         [HttpGet]
-        public async Task<ActionResult<SearchResult<Contact>>> GetContacts(ContactCriteria criteria)
+        public async Task<ActionResult<SearchResult<Contact>>> GetContacts([FromQuery]ContactCriteria criteria)
         {
             return await _contactService.GetContacts(criteria);
         }

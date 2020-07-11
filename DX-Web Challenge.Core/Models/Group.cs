@@ -7,6 +7,6 @@ namespace DX_Web_Challenge.Core.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public ICollection<ContactGroup> ContactGroups { get; set; }
+        public virtual ICollection<ContactGroup> ContactGroups { get; set; }
     }
 }

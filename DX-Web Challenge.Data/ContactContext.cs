@@ -12,31 +12,32 @@ namespace DX_Web_Challenge.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
             modelBuilder.Entity<Contact>(entity =>
             {
                 entity.HasKey(c => c.Id);
+                entity.Property(c => c.Id).ValueGeneratedOnAdd();
                 entity.Property(c => c.Name).IsRequired();
                 entity.HasMany(c => c.ContactGroups).WithOne(c => c.Contact).HasForeignKey(c => c.ContactId);
+
+                // todo
+                entity.Ignore(x => x.Telephones);
             });
 
             modelBuilder.Entity<Group>(entity =>
             {
                 entity.HasKey( g=> g.Id);
+                entity.Property(c => c.Id).ValueGeneratedOnAdd();
                 entity.Property(g => g.Name).IsRequired();
                 entity.HasMany(g => g.ContactGroups).WithOne(g => g.Group).HasForeignKey(g => g.GroupId);
             });
 
-            modelBuilder.Entity<ContactGroup>().HasKey(cg => new { cg.ContactId, cg.GroupId });
+            modelBuilder.Entity<ContactGroup>(entity =>
+            {
+                entity.HasKey(g => g.Id);
+                entity.Property(c => c.Id).ValueGeneratedOnAdd();
+            });
 
-
-            // todo
-            modelBuilder.Entity<Contact>().HasData(
-                //Id definido manualmente pois vamos usar o  provedor in-memory
-                new Contact { Id = 1, Name = "Antonio" },
-                new Contact { Id = 2, Name = "Vitor" }
-            );
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

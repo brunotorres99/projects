@@ -23,18 +23,18 @@ namespace DX_Web_Challenge.Data.Repository.Impl
 
             if(string.IsNullOrWhiteSpace(criteria?.SearchQuery) == false)
             {
-                query = query.Where(x => x.Name.Contains(criteria.SearchQuery));
+                query = query.Where(x => EF.Functions.Like(x.Name, $"%{criteria.SearchQuery}%"));
             }
 
             var count = await query.CountAsync();
 
             if (string.IsNullOrWhiteSpace(criteria?.SortField))
             {
-                query = query.OrderBy(criteria.SortField, criteria.IsAscending);
+                query = query.OrderBy(x => x.Name);
             }
             else
             {
-                query = query.OrderBy(x => x.Name);
+                query = query.OrderBy(criteria.SortField, criteria.IsAscending);
             }
 
             if(criteria?.HasPagination == true)

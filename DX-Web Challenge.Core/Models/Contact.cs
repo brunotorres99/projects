@@ -10,6 +10,6 @@ namespace DX_Web_Challenge.Core.Models
         public string Email { get; set; }
         public List<string> Telephones { get; set; }
 
-        public ICollection<ContactGroup> ContactGroups { get; set; }
+        public virtual ICollection<ContactGroup> ContactGroups { get; set; }
     }
 }
