@@ -1,6 +1,7 @@
 ﻿using DX_Web_Challenge.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -44,6 +45,8 @@ namespace DX_Web_Challenge.Data
                 entity.Property(c => c.Id).ValueGeneratedOnAdd();
             });
 
+            modelBuilder.Seed();
+
             base.OnModelCreating(modelBuilder);
         }
 
@@ -59,6 +62,50 @@ namespace DX_Web_Challenge.Data
             }
 
             return await base.SaveChangesAsync(cancellationToken);
+        }
+    }
+
+    public static class ModelBuilderExtensions
+    {
+        public static void Seed(this ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Contact>().HasData(
+                new Contact
+                {
+                    Id = 1,
+                    FirstName = "Valter",
+                    LastName = "Tavares"
+                },
+                new Contact
+                {
+                    Id = 2,
+                    FirstName = "Antonio",
+                    LastName = "Neves"
+                }
+            );
+
+            modelBuilder.Entity<Group>().HasData(
+                new Group
+                {
+                    Id = 1,
+                    Name = "Motos"
+                }
+            );
+
+            modelBuilder.Entity<ContactGroup>().HasData(
+                new ContactGroup
+                {
+                    Id = 1,
+                    ContactId = 1,
+                    GroupId = 1
+                },
+                new ContactGroup
+                {
+                    Id = 2,
+                    ContactId = 2,
+                    GroupId = 1
+                }
+            );
         }
     }
 }

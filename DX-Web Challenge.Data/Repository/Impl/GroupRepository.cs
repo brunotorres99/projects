@@ -42,6 +42,8 @@ namespace DX_Web_Challenge.Data.Repository.Impl
                 query = query.Skip(criteria.SkipValue).Take(criteria.PageSize.Value);
             }
 
+            query = query.Include(x => x.ContactGroups).ThenInclude(x => x.Group);
+
             var records = await query.ToListAsync();
 
             return new SearchResult<Group>
@@ -63,6 +65,17 @@ namespace DX_Web_Challenge.Data.Repository.Impl
 
         public void Update(Group group)
         {
+            var contactGroups = _context.Contacts.Where(x => x.Id == group.Id).SelectMany(x => x.ContactGroups).ToList();
+
+            // find contacts to delete from the group
+            var contactsToDelete = contactGroups.Where(x => group.ContactGroups.Any(c => c.ContactId == x.ContactId) == false).ToList();
+            _context.RemoveRange(contactsToDelete);
+
+            // find contacts to add
+            var contactsToInsert = group.ContactGroups.Where(x => contactGroups.Any(c => c.ContactId == x.ContactId) == false).ToList();
+            group.ContactGroups.ToList().AddRange(contactsToInsert);
+
+            // todo check
             _context.Groups.Update(group);
         }
     }
