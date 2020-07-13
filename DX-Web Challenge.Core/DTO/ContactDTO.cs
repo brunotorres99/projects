@@ -10,6 +10,8 @@ namespace DX_Web_Challenge.Core.DTO
 
         public ContactDTO(Contact contact)
         {
+            if (contact == null) return;
+
             Id = contact.Id;
             FirstName = contact.FirstName;
             LastName = contact.LastName;

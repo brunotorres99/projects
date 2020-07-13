@@ -92,6 +92,11 @@ namespace DX_Web_Challenge.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
+            if(id == 0)
+            {
+                return View(new ResponseObject<ContactDTO>());
+            }
+
             var builder = new UriBuilder($"{_apiBaseURL}/api/Contact/{id}");
             string url = builder.ToString();
 
@@ -101,6 +106,42 @@ namespace DX_Web_Challenge.Web.Controllers
             var result = JsonConvert.DeserializeObject<ContactDTO>(apiResponse);
 
             return View(new ResponseObject<ContactDTO>{ Value = result });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Add(ResponseObject<ContactDTO> contact)
+        {
+            await LoadPhotoAsync();
+
+            var builder = new UriBuilder($"{_apiBaseURL}/api/Contact");
+            string url = builder.ToString();
+
+            using var httpClient = new HttpClient();
+            var content = JsonConvert.SerializeObject(contact.Value);
+            using var httpContent = new StringContent(content, Encoding.UTF8, "application/json");
+
+            using var response = await httpClient.PostAsync(url, httpContent);
+            string apiResponse = await response.Content.ReadAsStringAsync();
+            var result = JsonConvert.DeserializeObject<ResponseObject<ContactDTO>>(apiResponse);
+
+            return View("Edit", result);
+
+            async Task LoadPhotoAsync()
+            {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Count == 0) return;
+
+                foreach (var file in files)
+                {
+                    if (file != null && file.Length > 0)
+                    {
+                        using var ms = new MemoryStream();
+                        await file.CopyToAsync(ms);
+                        var fileBytes = ms.ToArray();
+                        contact.Value.Photo = $"data:{file.ContentType};base64,{ Convert.ToBase64String(fileBytes)}";
+                    }
+                }
+            }
         }
 
         [HttpPost]

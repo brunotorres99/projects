@@ -10,10 +10,12 @@ namespace DX_Web_Challenge.Core.DTO
 
         public GroupDTO(Group group)
         {
+            if (group == null) return;
+
             Id = group.Id;
             Name = group.Name;
             RowVersion = group.RowVersion;
-            ContactGroups = group.ContactGroups.Select(x => new ContactGroupDTO
+            ContactGroups = group.ContactGroups?.Select(x => new ContactGroupDTO
             {
                 Id = x.Id,
                 ContactId = x.ContactId,
@@ -34,7 +36,7 @@ namespace DX_Web_Challenge.Core.DTO
                 Id = Id,
                 Name = Name,
                 RowVersion = RowVersion,
-                ContactGroups = ContactGroups.Select(x => new ContactGroup
+                ContactGroups = ContactGroups?.Select(x => new ContactGroup
                 {
                     Id = x.Id,
                     ContactId = x.ContactId,

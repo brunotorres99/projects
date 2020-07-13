@@ -12,9 +12,9 @@
                 <tr>
                     <th>Id</th>
                     <th></th>
-                    <th>Nome</th>
-                    <th>Numero</th>
-                    <th>Editar</th>
+                    <th>Name</th>
+                    <th>number</th>
+                    <th>Edit</th>
                 </tr>
             </thead>
         </table>
@@ -29,6 +29,7 @@
             "filter": true, // this is for disable filter (search box)
             "orderMulti": false, // for disable multiple column at once
             "scrollY": 550,
+            "lengthChange": false,
             "ajax": {
                 "url": "/Contact/LoadContacts",
                 "type": "POST",
@@ -62,5 +63,7 @@
                 }
             ]
         });
+
+        $("div#example_wrapper").prepend('<div style="float: left;"><a class="btn btn-info" href="/Contact/Edit/0">New</a></div>');
     });
 </script>  

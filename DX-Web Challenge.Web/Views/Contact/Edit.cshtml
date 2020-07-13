@@ -5,9 +5,17 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit</h1>
+@{
+    if (Model?.Value == null)
+    {
+        <h1>Add Contact</h1>
+    }
+    else
+    {
+        <h1>Edit Contact</h1>
+    }
+}
 
-<h4>Contact</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -60,8 +68,17 @@
                 <span asp-validation-for="Value.RowVersion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input id="edit" type="submit" value="Save" class="btn btn-primary" />
-                <input id="delete" type="submit" value="Delete" class="btn btn-primary" />
+                @{
+                    if (Model?.Value == null)
+                    {
+                        <input id="add" type="submit" value="Save" class="btn btn-primary" />
+                    }
+                    else
+                    {
+                        <input id="edit" type="submit" value="Save" class="btn btn-primary" />
+                        <input id="delete" type="submit" value="Delete" class="btn btn-primary" />
+                    }
+                }
             </div>
         </form>
     </div>
@@ -73,6 +90,11 @@
 
 <script>
     $(document).ready(function () {
+        $("#add").click(function () {
+            var action = $("form").attr("action").replace("Edit", "Add");
+            $("form").attr("action", action);
+        });
+
         $("#delete").click(function () {
             var action = $("form").attr("action").replace("Edit", "Delete");
             $("form").attr("action", action);
