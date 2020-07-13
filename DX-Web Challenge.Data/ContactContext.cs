@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -67,103 +68,99 @@ namespace DX_Web_Challenge.Data
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Contact>().HasData(
+            var listContacts = new List<Contact>
+            {
                 new Contact
                 {
                     Id = 1,
                     FirstName = "Valter",
                     LastName = "Tavares",
-                    Photo = Encoding.ASCII.GetBytes("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="),
-                    RowVersion = Guid.NewGuid().ToByteArray(),
-                    Telephones = "942666688"
+                    Photo = Encoding.ASCII.GetBytes("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==")
                 },
                 new Contact
                 {
                     Id = 2,
                     FirstName = "Antonio",
-                    LastName = "Neves",
-                    RowVersion = Guid.NewGuid().ToByteArray(),
-                    Telephones = "942666684"
+                    LastName = "Neves"
                 },
                 new Contact
                 {
                     Id = 3,
                     FirstName = "Vitor",
-                    LastName = "Silva",
-                    RowVersion = Guid.NewGuid().ToByteArray()
+                    LastName = "Silva"
                 },
                 new Contact
                 {
                     Id = 4,
                     FirstName = "Manuel",
-                    LastName = "Marques",
-                    RowVersion = Guid.NewGuid().ToByteArray(),
-                    Telephones = "942666684"
+                    LastName = "Marques"
                 },
                 new Contact
                 {
                     Id = 5,
                     FirstName = "Ana",
-                    LastName = "Neves",
-                    RowVersion = Guid.NewGuid().ToByteArray()
+                    LastName = "Neves"
                 },
                 new Contact
                 {
                     Id = 6,
                     FirstName = "Carlos",
-                    LastName = "Dantas",
-                    RowVersion = Guid.NewGuid().ToByteArray()
+                    LastName = "Dantas"
                 },
                 new Contact
                 {
                     Id = 7,
                     FirstName = "Luis",
-                    LastName = "Palma",
-                    RowVersion = Guid.NewGuid().ToByteArray()
+                    LastName = "Palma"
                 },
                 new Contact
                 {
                     Id = 8,
                     FirstName = "Nuno",
-                    LastName = "Lopes",
-                    RowVersion = Guid.NewGuid().ToByteArray()
+                    LastName = "Lopes"
                 },
                 new Contact
                 {
                     Id = 9,
                     FirstName = "Nuno",
-                    LastName = "Silva",
-                    RowVersion = Guid.NewGuid().ToByteArray()
+                    LastName = "Silva"
                 },
                 new Contact
                 {
                     Id = 10,
                     FirstName = "João",
-                    LastName = "Tavares",
-                    RowVersion = Guid.NewGuid().ToByteArray()
+                    LastName = "Tavares"
                 },
                 new Contact
                 {
                     Id = 11,
                     FirstName = "Marisa",
-                    LastName = "Pinto",
-                    RowVersion = Guid.NewGuid().ToByteArray()
+                    LastName = "Pinto"
                 },
                 new Contact
                 {
                     Id = 12,
                     FirstName = "Amelia",
-                    LastName = "Silva",
-                    RowVersion = Guid.NewGuid().ToByteArray()
+                    LastName = "Silva"
                 },
                 new Contact
                 {
                     Id = 13,
                     FirstName = "Tomas",
                     LastName = "Rego",
-                    RowVersion = Guid.NewGuid().ToByteArray()
                 }
-            );
+            };
+
+            Random rnd = new Random();
+
+            foreach (var contact in listContacts)
+            {
+                contact.RowVersion = Guid.NewGuid().ToByteArray();
+                contact.Telephones = rnd.Next(910000000, 999999999).ToString();
+                contact.Email = $"{contact.FirstName}.{contact.LastName}@test.com";
+            }
+
+            modelBuilder.Entity<Contact>().HasData(listContacts);
 
             modelBuilder.Entity<Group>().HasData(
                 new Group

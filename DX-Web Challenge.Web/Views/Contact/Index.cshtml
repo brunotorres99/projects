@@ -14,7 +14,7 @@
                     <th></th>
                     <th>Name</th>
                     <th>number</th>
-                    <th>Edit</th>
+                    <th></th>
                 </tr>
             </thead>
         </table>
@@ -58,8 +58,17 @@
                 {
                     "searchable": false,
                     "orderable": false,
-                    "width": "60px",
-                    "render": function (data, type, row) { return '<a class="btn btn-info" href="/Contact/Edit/' + row.id + '">Edit</a>'; }
+                    "width": "120px",
+                    "render": function (data, type, row) {
+
+                        let template = `<a class="btn btn-info" href="/Contact/Edit/${row.id}">Edit</a>`;
+
+                        if (row.email != null && row.email.length > 0) {
+                            template += `<a class='btn btn-info' style='margin-left: 8px;' href='mailto: ${row.email}?subject = Hello ${row.firstName}'>Email</a>`;
+                        }
+
+                        return template;
+                    }
                 }
             ]
         });
