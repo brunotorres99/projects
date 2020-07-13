@@ -1,7 +1,8 @@
 ﻿using DX_Web_Challenge.Business;
 using DX_Web_Challenge.Core.Criteria;
-using DX_Web_Challenge.Core.Models;
+using DX_Web_Challenge.Core.DTO;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace DX_Web_Challenge.API
@@ -18,13 +19,19 @@ namespace DX_Web_Challenge.API
         }
 
         [HttpGet]
-        public async Task<ActionResult<SearchResult<Contact>>> GetContacts([FromQuery]ContactCriteria criteria)
+        public async Task<ActionResult<SearchResult<ContactDTO>>> GetContacts([FromQuery]ContactCriteria criteria)
         {
-            return await _contactService.GetContacts(criteria);
+            var result = await _contactService.GetContacts(criteria);
+
+            return new SearchResult<ContactDTO>
+            {
+                Records = result.Records.Select(x => new ContactDTO(x)),
+                RecordCount = result.RecordCount
+            };
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Contact>> GeContacts(int id)
+        public async Task<ActionResult<ContactDTO>> GeContacts(int id)
         {
             var contact = await _contactService.GeContact(id);
 
@@ -33,26 +40,26 @@ namespace DX_Web_Challenge.API
                 return NotFound();
             }
 
-            return contact;
+            return new ContactDTO(contact);
         }
 
         [HttpPost]
-        public async Task<ActionResult<Contact>> PostContacts(Contact contact)
+        public async Task<ActionResult<ContactDTO>> PostContacts(ContactDTO contact)
         {
-            await _contactService.AddContact(contact);
+            await _contactService.AddContact(contact.MapToContact());
 
             return CreatedAtAction("GetContacts", new { id = contact.Id });
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutContacts(int id, Contact contact)
+        public async Task<IActionResult> PutContacts(int id, ContactDTO contact)
         {
             if (id != contact.Id)
             {
                 return BadRequest();
             }
 
-            await _contactService.UpdateContact(id, contact);
+            await _contactService.UpdateContact(id, contact.MapToContact());
 
             return CreatedAtAction("GetContacts", new { id = id });
         }

@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DX-Web Challenge.Core", "DX
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DX-Web Challenge.Business.Test", "DX-Web Challenge.Business.Test\DX-Web Challenge.Business.Test.csproj", "{C46B1630-47D2-409A-AA26-10FDF7EE71EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DX-Web Challenge.Web", "DX-Web Challenge.Web\DX-Web Challenge.Web.csproj", "{7B039DF8-DC40-4D5E-BB8C-864A24AB172F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C46B1630-47D2-409A-AA26-10FDF7EE71EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C46B1630-47D2-409A-AA26-10FDF7EE71EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C46B1630-47D2-409A-AA26-10FDF7EE71EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B039DF8-DC40-4D5E-BB8C-864A24AB172F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B039DF8-DC40-4D5E-BB8C-864A24AB172F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B039DF8-DC40-4D5E-BB8C-864A24AB172F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B039DF8-DC40-4D5E-BB8C-864A24AB172F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

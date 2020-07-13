@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SEeghg+CsbATVStAbUbZMhGgQR8mZfabmUwQwCM82JWB3wW9wzORjGe0MSTXSOzpaVxugxMJ7aC+GpZ6XT+rIA==",
+  "success": true,
+  "projectFilePath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Web\\DX-Web Challenge.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wrt\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

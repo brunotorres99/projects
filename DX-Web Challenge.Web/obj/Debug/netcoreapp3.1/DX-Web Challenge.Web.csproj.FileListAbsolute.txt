@@ -1,0 +1,41 @@
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.csprojAssemblyReference.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.AssemblyInfoInputs.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.AssemblyInfo.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.csproj.CoreCompileInputs.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.RazorAssemblyInfo.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.RazorAssemblyInfo.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Web.exe
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Web.deps.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Web.runtimeconfig.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Web.runtimeconfig.dev.json
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Web.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Web.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Web.Views.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Web.Views.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Core.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\DX-Web Challenge.Core.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.TagHelpers.input.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.TagHelpers.output.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.RazorCoreGenerate.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.RazorTargetAssemblyInfo.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.RazorTargetAssemblyInfo.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.Views.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.csproj.CopyComplete
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\staticwebassets\DX-Web Challenge.Web.StaticWebAssets.Manifest.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\staticwebassets\DX-Web Challenge.Web.StaticWebAssets.xml
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.pdb
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.genruntimeconfig.cache

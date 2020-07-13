@@ -1,7 +1,9 @@
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\testhost.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\nunit.engine.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\testhost.exe
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.deps.json
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.runtimeconfig.json
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.runtimeconfig.dev.json
@@ -36,7 +38,7 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcor
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\testhost.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\MockQueryable.Core.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\nunit.framework.dll
@@ -134,10 +136,8 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcor
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.csprojAssemblyReference.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.AssemblyInfoInputs.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.AssemblyInfo.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.csproj.CoreCompileInputs.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.csproj.CopyComplete
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.pdb
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.genruntimeconfig.cache
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\testhost.exe
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\bin\Debug\netcoreapp3.1\MockQueryable.Core.dll
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business.Test\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.Test.csproj.CoreCompileInputs.cache
