@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DX-Web Challenge.Core\DX-Web Challenge.Core.csproj" />
-    <ProjectReference Include="..\DX-Web Challenge.Data\DX-Web Challenge.Data.csproj" />
   </ItemGroup>
 
 </Project>

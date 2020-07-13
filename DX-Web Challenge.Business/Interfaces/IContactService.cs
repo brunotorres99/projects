@@ -3,7 +3,7 @@ using DX_Web_Challenge.Core;
 using DX_Web_Challenge.Core.Models;
 using System.Threading.Tasks;
 
-namespace DX_Web_Challenge.Business
+namespace DX_Web_Challenge.Business.Interfaces
 {
     public interface IContactService
     {

@@ -110,3 +110,4 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\zh
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.csproj.CoreCompileInputs.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Edit.cshtml.g.cs

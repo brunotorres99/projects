@@ -1,4 +1,5 @@
-﻿using DX_Web_Challenge.Core;
+﻿using DX_Web_Challenge.Business.Interfaces;
+using DX_Web_Challenge.Core;
 using DX_Web_Challenge.Core.Criteria;
 using DX_Web_Challenge.Core.Models;
 using Microsoft.EntityFrameworkCore;

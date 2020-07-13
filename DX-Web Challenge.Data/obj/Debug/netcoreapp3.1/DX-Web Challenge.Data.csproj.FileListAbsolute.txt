@@ -13,3 +13,5 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Data\obj\Debug\netcoreapp3.1\D
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Data\obj\Debug\netcoreapp3.1\DX-Web Challenge.Data.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Data\obj\Debug\netcoreapp3.1\DX-Web Challenge.Data.pdb
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Data\obj\Debug\netcoreapp3.1\DX-Web Challenge.Data.genruntimeconfig.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Data\bin\Debug\netcoreapp3.1\DX-Web Challenge.Business.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Data\bin\Debug\netcoreapp3.1\DX-Web Challenge.Business.pdb

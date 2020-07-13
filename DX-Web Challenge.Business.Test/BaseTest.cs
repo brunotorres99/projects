@@ -1,6 +1,6 @@
-﻿using DX_Web_Challenge.Business.Services.Impl;
+﻿using DX_Web_Challenge.Business.Interfaces;
+using DX_Web_Challenge.Business.Services.Impl;
 using DX_Web_Challenge.Data;
-using DX_Web_Challenge.Data.Repository;
 using DX_Web_Challenge.Data.Repository.Impl;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;

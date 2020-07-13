@@ -1,4 +1,5 @@
-﻿using DX_Web_Challenge.Business;
+﻿using DX_Web_Challenge.Business.Interfaces;
+using DX_Web_Challenge.Core;
 using DX_Web_Challenge.Core.Criteria;
 using DX_Web_Challenge.Core.DTO;
 using Microsoft.AspNetCore.Mvc;
@@ -44,32 +45,44 @@ namespace DX_Web_Challenge.API
         }
 
         [HttpPost]
-        public async Task<ActionResult<ContactDTO>> PostContacts(ContactDTO contact)
+        public async Task<ActionResult<ResponseObject<ContactDTO>>> PostContacts(ContactDTO contact)
         {
-            await _contactService.AddContact(contact.MapToContact());
+            var response = await _contactService.AddContact(contact.MapToContact());
 
-            return CreatedAtAction("GetContacts", new { id = contact.Id });
+            return Ok(new ResponseObject<ContactDTO>
+            {
+                BusinessMessages = response.BusinessMessages,
+                Value = new ContactDTO(response.Value)
+            });
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutContacts(int id, ContactDTO contact)
+        public async Task<ActionResult<ResponseObject<ContactDTO>>> PutContacts(int id, ContactDTO contact)
         {
             if (id != contact.Id)
             {
                 return BadRequest();
             }
 
-            await _contactService.UpdateContact(id, contact.MapToContact());
+            var response = await _contactService.UpdateContact(id, contact.MapToContact());
 
-            return CreatedAtAction("GetContacts", new { id = id });
+            return Ok(new ResponseObject<ContactDTO>
+            { 
+                BusinessMessages = response.BusinessMessages,
+                Value = new ContactDTO(response.Value)
+            });
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteContacts(int id)
+        public async Task<ActionResult<ResponseObject<ContactDTO>>> DeleteContacts(int id)
         {
-            await _contactService.DeleteContact(id);
+            var response = await _contactService.DeleteContact(id);
 
-            return Ok();
+            return Ok(new ResponseObject<ContactDTO>
+            {
+                BusinessMessages = response.BusinessMessages,
+                Value = new ContactDTO(response.Value)
+            });
         }
     }
 }

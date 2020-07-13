@@ -2,9 +2,7 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\bin\Debug\netcoreapp3
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\bin\Debug\netcoreapp3.1\DX-Web Challenge.Business.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\bin\Debug\netcoreapp3.1\DX-Web Challenge.Business.pdb
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\bin\Debug\netcoreapp3.1\DX-Web Challenge.Core.dll
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\bin\Debug\netcoreapp3.1\DX-Web Challenge.Data.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\bin\Debug\netcoreapp3.1\DX-Web Challenge.Core.pdb
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\bin\Debug\netcoreapp3.1\DX-Web Challenge.Data.pdb
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.csprojAssemblyReference.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.AssemblyInfoInputs.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Business\obj\Debug\netcoreapp3.1\DX-Web Challenge.Business.AssemblyInfo.cs

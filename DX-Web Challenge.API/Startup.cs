@@ -1,7 +1,6 @@
-using DX_Web_Challenge.Business;
+using DX_Web_Challenge.Business.Interfaces;
 using DX_Web_Challenge.Business.Services.Impl;
 using DX_Web_Challenge.Data;
-using DX_Web_Challenge.Data.Repository;
 using DX_Web_Challenge.Data.Repository.Impl;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -47,6 +46,8 @@ namespace DX_Web_Challenge.API
                 app.UseDeveloperExceptionPage();
             }
 
+            //app.UseRequestCulture();
+
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger(c =>
             {
@@ -74,6 +75,14 @@ namespace DX_Web_Challenge.API
 
             db.Database.EnsureDeleted();
             db.Database.EnsureCreated();
+        }
+    }
+
+    public static class RequestCultureMiddlewareExtensions
+    {
+        public static IApplicationBuilder UseRequestCulture(this IApplicationBuilder builder)
+        {
+            return builder.UseMiddleware<RequestMiddleware>();
         }
     }
 }

@@ -1,7 +1,8 @@
-﻿using DX_Web_Challenge.Core;
+﻿using DX_Web_Challenge.Business.Interfaces;
+using DX_Web_Challenge.Core;
 using DX_Web_Challenge.Core.Criteria;
 using DX_Web_Challenge.Core.Models;
-using DX_Web_Challenge.Data.Repository;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace DX_Web_Challenge.Business.Services.Impl
@@ -51,8 +52,14 @@ namespace DX_Web_Challenge.Business.Services.Impl
             await Validate();
             if (response.IsValid == false) return response;
 
-            _groupRepository.Update(group);
+            var savedGroup = await _groupRepository.FindByIdAsync(id);
 
+            // apply changes
+            savedGroup.Name = group.Name;
+            savedGroup.ContactGroups = group.ContactGroups;
+            savedGroup.RowVersion = group.RowVersion;
+
+            _groupRepository.Update(group);
             await _groupRepository.SaveChangesAsync();
 
             response.Value = group;
@@ -67,7 +74,7 @@ namespace DX_Web_Challenge.Business.Services.Impl
                     return;
                 }
 
-                if (savedGroup.RowVersion != group.RowVersion)
+                if (savedGroup.RowVersion.SequenceEqual(group.RowVersion) == false)
                 {
                     response.AddMessage("Group", "This Group is already updated", BusinessMessage.TypeEnum.error);
                 }

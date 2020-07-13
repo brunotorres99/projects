@@ -431,6 +431,19 @@
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
+      "DX-Web Challenge.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DX-Web Challenge.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DX-Web Challenge.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DX-Web Challenge.Business.dll": {}
+        }
+      },
       "DX-Web Challenge.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -1152,6 +1165,11 @@
         "version.txt"
       ]
     },
+    "DX-Web Challenge.Business/1.0.0": {
+      "type": "project",
+      "path": "../DX-Web Challenge.Business/DX-Web Challenge.Business.csproj",
+      "msbuildProject": "../DX-Web Challenge.Business/DX-Web Challenge.Business.csproj"
+    },
     "DX-Web Challenge.Core/1.0.0": {
       "type": "project",
       "path": "../DX-Web Challenge.Core/DX-Web Challenge.Core.csproj",
@@ -1160,6 +1178,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "DX-Web Challenge.Business >= 1.0.0",
       "DX-Web Challenge.Core >= 1.0.0",
       "Microsoft.Data.SQLite >= 3.1.5",
       "Microsoft.Data.Sqlite.Core >= 3.1.5",
@@ -1194,6 +1213,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Business\\DX-Web Challenge.Business.csproj": {
+              "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Business\\DX-Web Challenge.Business.csproj"
+            },
             "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj": {
               "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj"
             }

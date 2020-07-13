@@ -1,4 +1,5 @@
-﻿using DX_Web_Challenge.Core;
+﻿using DX_Web_Challenge.Business.Interfaces;
+using DX_Web_Challenge.Core;
 using DX_Web_Challenge.Core.Criteria;
 using DX_Web_Challenge.Core.Models;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +24,9 @@ namespace DX_Web_Challenge.Data.Repository.Impl
 
             if(string.IsNullOrWhiteSpace(criteria?.SearchQuery) == false)
             {
-                query = query.Where(x => EF.Functions.Like(x.FirstName, $"%{criteria.SearchQuery}%"));
+                query = query.Where(x => EF.Functions.Like(x.FirstName, $"%{criteria.SearchQuery}%")
+                                        || EF.Functions.Like(x.LastName, $"%{criteria.SearchQuery}%")
+                                        || EF.Functions.Like(x.Email, $"%{criteria.SearchQuery}%"));
             }
 
             var count = await query.CountAsync();

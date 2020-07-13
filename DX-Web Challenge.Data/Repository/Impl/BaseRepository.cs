@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using DX_Web_Challenge.Business.Interfaces;
+using System.Threading.Tasks;
 
 namespace DX_Web_Challenge.Data.Repository.Impl
 {

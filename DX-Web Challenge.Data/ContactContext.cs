@@ -26,9 +26,6 @@ namespace DX_Web_Challenge.Data
                 entity.Property(c => c.LastName).IsRequired().HasMaxLength(100);
                 entity.Property(p => p.RowVersion).IsConcurrencyToken();
                 entity.HasMany(c => c.ContactGroups).WithOne(c => c.Contact).HasForeignKey(c => c.ContactId);
-
-                // todo
-                entity.Ignore(x => x.Telephones);
             });
 
             modelBuilder.Entity<Group>(entity =>
@@ -76,79 +73,95 @@ namespace DX_Web_Challenge.Data
                     Id = 1,
                     FirstName = "Valter",
                     LastName = "Tavares",
-                    Photo = Encoding.ASCII.GetBytes("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==")
+                    Photo = Encoding.ASCII.GetBytes("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="),
+                    RowVersion = Guid.NewGuid().ToByteArray(),
+                    Telephones = "942666688"
                 },
                 new Contact
                 {
                     Id = 2,
                     FirstName = "Antonio",
-                    LastName = "Neves"
+                    LastName = "Neves",
+                    RowVersion = Guid.NewGuid().ToByteArray(),
+                    Telephones = "942666684"
                 },
                 new Contact
                 {
                     Id = 3,
                     FirstName = "Vitor",
-                    LastName = "Silva"
+                    LastName = "Silva",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 },
                 new Contact
                 {
                     Id = 4,
                     FirstName = "Manuel",
-                    LastName = "Marques"
+                    LastName = "Marques",
+                    RowVersion = Guid.NewGuid().ToByteArray(),
+                    Telephones = "942666684"
                 },
                 new Contact
                 {
                     Id = 5,
                     FirstName = "Ana",
-                    LastName = "Neves"
+                    LastName = "Neves",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 },
                 new Contact
                 {
                     Id = 6,
                     FirstName = "Carlos",
-                    LastName = "Dantas"
+                    LastName = "Dantas",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 },
                 new Contact
                 {
                     Id = 7,
                     FirstName = "Luis",
-                    LastName = "Palma"
+                    LastName = "Palma",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 },
                 new Contact
                 {
                     Id = 8,
                     FirstName = "Nuno",
-                    LastName = "Lopes"
+                    LastName = "Lopes",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 },
                 new Contact
                 {
                     Id = 9,
                     FirstName = "Nuno",
-                    LastName = "Silva"
+                    LastName = "Silva",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 },
                 new Contact
                 {
                     Id = 10,
                     FirstName = "João",
-                    LastName = "Tavares"
+                    LastName = "Tavares",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 },
                 new Contact
                 {
                     Id = 11,
                     FirstName = "Marisa",
-                    LastName = "Pinto"
+                    LastName = "Pinto",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 },
                 new Contact
                 {
                     Id = 12,
                     FirstName = "Amelia",
-                    LastName = "Silva"
+                    LastName = "Silva",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 },
                 new Contact
                 {
                     Id = 13,
                     FirstName = "Tomas",
-                    LastName = "Rego"
+                    LastName = "Rego",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 }
             );
 
@@ -156,7 +169,8 @@ namespace DX_Web_Challenge.Data
                 new Group
                 {
                     Id = 1,
-                    Name = "Motos"
+                    Name = "Motos",
+                    RowVersion = Guid.NewGuid().ToByteArray()
                 }
             );
 

@@ -101,9 +101,6 @@
             "projectReferences": {
               "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj": {
                 "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj"
-              },
-              "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Data\\DX-Web Challenge.Data.csproj": {
-                "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Data\\DX-Web Challenge.Data.csproj"
               }
             }
           }
@@ -210,6 +207,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Business\\DX-Web Challenge.Business.csproj": {
+                "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Business\\DX-Web Challenge.Business.csproj"
+              },
               "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj": {
                 "projectPath": "C:\\Git\\projects\\DX-Web Challenge\\DX-Web Challenge.Core\\DX-Web Challenge.Core.csproj"
               }

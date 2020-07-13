@@ -385,6 +385,14 @@
           }
         }
       },
+      "DX-Web Challenge.Business/1.0.0": {
+        "dependencies": {
+          "DX-Web Challenge.Core": "1.0.0"
+        },
+        "runtime": {
+          "DX-Web Challenge.Business.dll": {}
+        }
+      },
       "DX-Web Challenge.Core/1.0.0": {
         "runtime": {
           "DX-Web Challenge.Core.dll": {}
@@ -628,6 +636,11 @@
       "sha512": "sha512-TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
       "path": "system.text.json/4.7.2",
       "hashPath": "system.text.json.4.7.2.nupkg.sha512"
+    },
+    "DX-Web Challenge.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "DX-Web Challenge.Core/1.0.0": {
       "type": "project",

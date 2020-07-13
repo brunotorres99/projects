@@ -26,7 +26,7 @@ namespace DX_Web_Challenge.Core.DTO
         public string Address { get; set; }
         public string Email { get; set; }
         public string Photo { get; set; }
-        public List<string> Telephones { get; set; }
+        public string Telephones { get; set; }
 
         public byte[] RowVersion { get; set; }
 

@@ -6,4 +6,3 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Core\obj\Debug\netcoreapp3.1\D
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Core\obj\Debug\netcoreapp3.1\DX-Web Challenge.Core.csproj.CoreCompileInputs.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Core\obj\Debug\netcoreapp3.1\DX-Web Challenge.Core.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Core\obj\Debug\netcoreapp3.1\DX-Web Challenge.Core.pdb
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Core\obj\Debug\netcoreapp3.1\DX-Web Challenge.Core.csprojAssemblyReference.cache

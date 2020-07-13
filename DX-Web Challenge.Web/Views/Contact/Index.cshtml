@@ -15,7 +15,6 @@
                     <th>Nome</th>
                     <th>Numero</th>
                     <th>Editar</th>
-                    <th>Eliminar</th>
                 </tr>
             </thead>
         </table>
@@ -23,7 +22,6 @@
 </div>
 
 <script>
-
     $(document).ready(function() {
         $("#example").DataTable({
             "processing": true, // for show progress bar
@@ -49,42 +47,20 @@
                         return `<img src="${row.photo}" width="50px" height="50px">`;
                     }
                 },
-                { "data": "firstName", "name": "firstName", "autoWidth": true },
+                {
+                    "data": "firstName",
+                    "name": "firstName",
+                    "autoWidth": true,
+                    "render": function (data, type, row) { return `${row.firstName} ${row.lastName}`; }
+                },
                 { "data": "telephones", "name": "telephones", "autoWidth": true },
                 {
                     "searchable": false,
                     "orderable": false,
-                    "render": function (data, type, row) { return '<a class="btn btn-info" href="/Contact/Edit/' + row.Id + '">Edit</a>'; }
-                },
-                {
-                    "searchable": false,
-                    "orderable": false,
-                    "render": function (data, type, row) { return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.Id + "'); >Delete</a>"; }
-                },
+                    "width": "60px",
+                    "render": function (data, type, row) { return '<a class="btn btn-info" href="/Contact/Edit/' + row.id + '">Edit</a>'; }
+                }
             ]
         });
     });
-
-
-    function DeleteData(id) {
-        if (confirm("Are you sure you want to delete ...?")) {
-            Delete(id);
-        } else {
-            return false;
-        }
-    }
-
-    function Delete(id) {
-        var url = '@Url.Content("~/")' + "Contact/Delete";
-
-            $.post(url, { Id: id }, function(data) {
-            if (data) {
-                oTable = $('#example').DataTable();
-                oTable.draw();
-            } else {
-                alert("Something Went Wrong!");
-            }
-        });
-    }
-
 </script>  

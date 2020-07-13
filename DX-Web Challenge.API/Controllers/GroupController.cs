@@ -1,4 +1,5 @@
-﻿using DX_Web_Challenge.Business;
+﻿using DX_Web_Challenge.Business.Interfaces;
+using DX_Web_Challenge.Core;
 using DX_Web_Challenge.Core.Criteria;
 using DX_Web_Challenge.Core.DTO;
 using DX_Web_Challenge.Core.Models;
@@ -47,30 +48,42 @@ namespace DX_Web_Challenge.API
         [HttpPost]
         public async Task<ActionResult<GroupDTO>> PostGroups(Group group)
         {
-            await _groupService.AddGroup(group);
+            var response = await _groupService.AddGroup(group);
 
-            return CreatedAtAction("GetGroups", new { id = group.Id });
+            return Ok(new ResponseObject<GroupDTO>
+            {
+                BusinessMessages = response.BusinessMessages,
+                Value = new GroupDTO(response.Value)
+            });
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutGroups(int id, Group group)
+        public async Task<ActionResult<GroupDTO>> PutGroups(int id, Group group)
         {
             if (id != group.Id)
             {
                 return BadRequest();
             }
 
-            await _groupService.UpdateGroup(id, group);
+            var response = await _groupService.UpdateGroup(id, group);
 
-            return CreatedAtAction("GetGroups", new { id = id });
+            return Ok(new ResponseObject<GroupDTO>
+            {
+                BusinessMessages = response.BusinessMessages,
+                Value = new GroupDTO(response.Value)
+            });
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteGroups(int id)
+        public async Task<ActionResult<GroupDTO>> DeleteGroups(int id)
         {
-            await _groupService.DeleteGroup(id);
+            var response = await _groupService.DeleteGroup(id);
 
-            return Ok();
+            return Ok(new ResponseObject<GroupDTO>
+            {
+                BusinessMessages = response.BusinessMessages,
+                Value = new GroupDTO(response.Value)
+            });
         }
     }
 }

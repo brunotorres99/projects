@@ -1,0 +1,81 @@
+﻿@model DX_Web_Challenge.Core.ResponseObject<DX_Web_Challenge.Core.DTO.ContactDTO>
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Contact</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="Value.Id" class="form-control" type="hidden" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Value.FirstName" class="control-label"></label>
+                <input asp-for="Value.FirstName" class="form-control" />
+                <span asp-validation-for="Value.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Value.LastName" class="control-label"></label>
+                <input asp-for="Value.LastName" class="form-control" />
+                <span asp-validation-for="Value.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Value.Address" class="control-label"></label>
+                <input asp-for="Value.Address" class="form-control" />
+                <span asp-validation-for="Value.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Value.Email" class="control-label"></label>
+                <input asp-for="Value.Email" class="form-control" type="email" />
+                <span asp-validation-for="Value.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Value.Telephones" class="control-label"></label>
+                <input asp-for="Value.Telephones" class="form-control" type="tel" />
+                <span asp-validation-for="Value.Telephones" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @{
+                    var imageTag = string.Empty;
+
+                    if (Model?.Value?.Photo != null)
+                    {
+                        @Html.Raw($"<img src='{Model.Value.Photo}' width='50' height='50'>");
+                    }
+                }
+
+                <label asp-for="Value.Photo" class="control-label"></label>
+                <input asp-for="Value.Photo" class="form-control" type="file" />
+                <span asp-validation-for="Value.Photo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-for="Value.RowVersion" class="form-control" type="hidden" />
+                <span asp-validation-for="Value.RowVersion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input id="edit" type="submit" value="Save" class="btn btn-primary" />
+                <input id="delete" type="submit" value="Delete" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#delete").click(function () {
+            var action = $("form").attr("action").replace("Edit", "Delete");
+            $("form").attr("action", action);
+        });
+    });
+</script>  

@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DX-Web Challenge.Business\DX-Web Challenge.Business.csproj" />
+    <ProjectReference Include="..\DX-Web Challenge.Data\DX-Web Challenge.Data.csproj" />
   </ItemGroup>
 
 </Project>

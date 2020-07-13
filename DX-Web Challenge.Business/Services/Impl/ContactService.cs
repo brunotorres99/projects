@@ -1,7 +1,8 @@
-﻿using DX_Web_Challenge.Core;
+﻿using DX_Web_Challenge.Business.Interfaces;
+using DX_Web_Challenge.Core;
 using DX_Web_Challenge.Core.Criteria;
 using DX_Web_Challenge.Core.Models;
-using DX_Web_Challenge.Data.Repository;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace DX_Web_Challenge.Business.Services.Impl
@@ -56,8 +57,25 @@ namespace DX_Web_Challenge.Business.Services.Impl
             await Validate();
             if (response.IsValid == false) return response;
 
-            _contactRepository.Update(contact);
+            var savedContact = await _contactRepository.FindByIdAsync(id);
+
+            // apply changes
+            savedContact.FirstName = contact.FirstName;
+            savedContact.LastName = contact.LastName;
+            savedContact.Address = contact.Address;
+            savedContact.Email = contact.Email;
+            savedContact.Telephones = contact.Telephones;
+            savedContact.RowVersion = contact.RowVersion;
+
+            // update photo only if there is a new
+            if(contact.Photo != null)
+                savedContact.Photo = contact.Photo;
+
+            _contactRepository.Update(savedContact);
             await _contactRepository.SaveChangesAsync();
+
+            // set photo
+            contact.Photo = savedContact.Photo;
 
             response.Value = contact;
             return response;
@@ -71,7 +89,7 @@ namespace DX_Web_Challenge.Business.Services.Impl
                     return;
                 }
 
-                if (savedContact.RowVersion != contact.RowVersion)
+                if (savedContact.RowVersion.SequenceEqual(contact.RowVersion) == false)
                 {
                     response.AddMessage("Contact", "This Contact is already updated", BusinessMessage.TypeEnum.error);
                 }
