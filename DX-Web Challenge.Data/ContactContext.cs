@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -74,7 +75,8 @@ namespace DX_Web_Challenge.Data
                 {
                     Id = 1,
                     FirstName = "Valter",
-                    LastName = "Tavares"
+                    LastName = "Tavares",
+                    Photo = Encoding.ASCII.GetBytes("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==")
                 },
                 new Contact
                 {

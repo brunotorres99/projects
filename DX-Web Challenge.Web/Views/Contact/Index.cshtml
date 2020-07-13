@@ -11,6 +11,7 @@
             <thead>
                 <tr>
                     <th>Id</th>
+                    <th></th>
                     <th>Nome</th>
                     <th>Numero</th>
                     <th>Editar</th>
@@ -29,6 +30,7 @@
             "serverSide": true, // for process server side
             "filter": true, // this is for disable filter (search box)
             "orderMulti": false, // for disable multiple column at once
+            "scrollY": 550,
             "ajax": {
                 "url": "/Contact/LoadContacts",
                 "type": "POST",
@@ -36,6 +38,17 @@
             },
             "columns": [
                 { "data": "id", "name": "id", "visible": false, "searchable": false },
+                {
+                    "searchable": false,
+                    "orderable": false,
+                    "render": function (data, type, row) {
+                        if (row.photo == null) {
+                            return `${row.firstName.split(' ').map(x => x.charAt(0)).join('').toUpperCase()} ${row.lastName}`;
+                        }
+
+                        return `<img src="${row.photo}" width="50px" height="50px">`;
+                    }
+                },
                 { "data": "firstName", "name": "firstName", "autoWidth": true },
                 { "data": "telephones", "name": "telephones", "autoWidth": true },
                 {
@@ -46,7 +59,7 @@
                 {
                     "searchable": false,
                     "orderable": false,
-                    "render": function(data, type, row) { return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.Id + "'); >Delete</a>"; }
+                    "render": function (data, type, row) { return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.Id + "'); >Delete</a>"; }
                 },
             ]
         });

@@ -1,5 +1,6 @@
 ﻿using DX_Web_Challenge.Core.Models;
 using System.Collections.Generic;
+using System.Text;
 
 namespace DX_Web_Challenge.Core.DTO
 {
@@ -14,7 +15,7 @@ namespace DX_Web_Challenge.Core.DTO
             LastName = contact.LastName;
             Address = contact.Address;
             Email = contact.Email;
-            Photo = contact.Photo;
+            Photo = contact.Photo != null ? Encoding.ASCII.GetString(contact.Photo) : null;
             Telephones = contact.Telephones;
             RowVersion = contact.RowVersion;
         }
@@ -24,7 +25,7 @@ namespace DX_Web_Challenge.Core.DTO
         public string LastName { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }
-        public byte[] Photo { get; set; }
+        public string Photo { get; set; }
         public List<string> Telephones { get; set; }
 
         public byte[] RowVersion { get; set; }
@@ -38,7 +39,7 @@ namespace DX_Web_Challenge.Core.DTO
                 LastName = LastName,
                 Address = Address,
                 Email = Email,
-                Photo = Photo,
+                Photo = Photo != null ? Encoding.ASCII.GetBytes(Photo) : null,
                 Telephones = Telephones,
                 RowVersion = RowVersion
             };
