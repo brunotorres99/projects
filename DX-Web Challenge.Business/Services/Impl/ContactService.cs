@@ -91,7 +91,7 @@ namespace DX_Web_Challenge.Business.Services.Impl
 
                 if (savedContact.RowVersion.SequenceEqual(contact.RowVersion) == false)
                 {
-                    response.AddMessage("Contact", "This Contact is already updated", BusinessMessage.TypeEnum.error);
+                    response.AddMessage("RowVersion", "This Contact is already updated", BusinessMessage.TypeEnum.error);
                 }
 
                 if (string.IsNullOrWhiteSpace(contact.FirstName))

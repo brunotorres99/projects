@@ -3,6 +3,7 @@ using DX_Web_Challenge.Core.Models;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
 using System;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -89,13 +90,9 @@ namespace DX_Web_Challenge.Business.Test
             contactBeforeUpdate.Email = "Test Email";
             contactBeforeUpdate.RowVersion = Guid.NewGuid().ToByteArray(); // to fail
 
-            await _contactService.UpdateContact(1, contactBeforeUpdate);
+            var response = await _contactService.UpdateContact(1, contactBeforeUpdate);
 
-            var contactAfterUpdate = await _contactService.GeContact(1);
-
-            Assert.IsTrue(contactAfterUpdate.Email == "Test Email");
-
-            // todo not working
+            Assert.IsTrue(response.BusinessMessages.Any(x => x.Field == "RowVersion"));
         }
     }
 }

@@ -76,7 +76,7 @@ namespace DX_Web_Challenge.Business.Services.Impl
 
                 if (savedGroup.RowVersion.SequenceEqual(group.RowVersion) == false)
                 {
-                    response.AddMessage("Group", "This Group is already updated", BusinessMessage.TypeEnum.error);
+                    response.AddMessage("RowVersion", "This Group is already updated", BusinessMessage.TypeEnum.error);
                 }
 
                 if (string.IsNullOrWhiteSpace(group.Name))
