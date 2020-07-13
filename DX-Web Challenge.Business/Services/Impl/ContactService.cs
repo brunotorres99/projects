@@ -1,7 +1,7 @@
 ﻿using DX_Web_Challenge.Core.Criteria;
+using DX_Web_Challenge.Core.DTO;
 using DX_Web_Challenge.Core.Models;
 using DX_Web_Challenge.Data.Repository;
-using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
 namespace DX_Web_Challenge.Business.Services.Impl
@@ -24,38 +24,92 @@ namespace DX_Web_Challenge.Business.Services.Impl
             return await _contactRepository.FindByIdAsync(id);
         }
 
-        public async Task<Contact> AddContact(Contact contact)
+        public async Task<ResponseObject<Contact>> AddContact(Contact contact)
         {
+            var response = new ResponseObject<Contact>();
+            await Validate();
+            if (response.IsValid == false) return response;
+
             await _contactRepository.AddAsync(contact);
             await _contactRepository.SaveChangesAsync();
 
-            return contact;
+            response.Value = contact;
+            return response;
+
+            async Task Validate()
+            {
+                if (string.IsNullOrWhiteSpace(contact.FirstName))
+                {
+                    response.AddMessage("FirstName", "The FirstName is required", BusinessMessage.TypeEnum.error);
+                }
+
+                if (string.IsNullOrWhiteSpace(contact.LastName))
+                {
+                    response.AddMessage("LastName", "The LastName is required", BusinessMessage.TypeEnum.error);
+                }
+            }
         }
 
-        public async Task UpdateContact(int id, Contact contact)
+        public async Task<ResponseObject<Contact>> UpdateContact(int id, Contact contact)
         {
+            var response = new ResponseObject<Contact>();
+            await Validate();
+            if (response.IsValid == false) return response;
+
             _contactRepository.Update(contact);
+            await _contactRepository.SaveChangesAsync();
 
-            try
+            response.Value = contact;
+            return response;
+
+            async Task Validate()
             {
-                await _contactRepository.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException ex)
-            {
-                throw;// todo
+                var savedContact = await _contactRepository.FindByIdAsync(id);
+                if (savedContact == null)
+                {
+                    response.AddMessage("Contact", "Contact not Found", BusinessMessage.TypeEnum.error);
+                    return;
+                }
+
+                if (savedContact.RowVersion != contact.RowVersion)
+                {
+                    response.AddMessage("Contact", "This Contact is already updated", BusinessMessage.TypeEnum.error);
+                }
+
+                if (string.IsNullOrWhiteSpace(contact.FirstName))
+                {
+                    response.AddMessage("FirstName", "The FirstName is required", BusinessMessage.TypeEnum.error);
+                }
+
+                if (string.IsNullOrWhiteSpace(contact.LastName))
+                {
+                    response.AddMessage("LastName", "The LastName is required", BusinessMessage.TypeEnum.error);
+                }
             }
         }
 
-        public async Task DeleteContact(int id)
+        public async Task<ResponseObject<Contact>> DeleteContact(int id)
         {
-            var contact = await _contactRepository.FindByIdAsync(id);
-            if (contact == null)
-            {
-                // todo
-            }
+            var response = new ResponseObject<Contact>();
+            await Validate();
+            if (response.IsValid == false) return response;
 
+            var contact = await _contactRepository.FindByIdAsync(id);
             _contactRepository.Remove(contact);
             await _contactRepository.SaveChangesAsync();
+
+            response.Value = contact;
+            return response;
+
+            async Task Validate()
+            {
+                var savedContact = await _contactRepository.FindByIdAsync(id);
+                if (savedContact == null)
+                {
+                    response.AddMessage("Contatc", "Contact not Found", BusinessMessage.TypeEnum.error);
+                    return;
+                }
+            }
         }
     }
 }

@@ -81,6 +81,72 @@ namespace DX_Web_Challenge.Data
                     Id = 2,
                     FirstName = "Antonio",
                     LastName = "Neves"
+                },
+                new Contact
+                {
+                    Id = 3,
+                    FirstName = "Vitor",
+                    LastName = "Silva"
+                },
+                new Contact
+                {
+                    Id = 4,
+                    FirstName = "Manuel",
+                    LastName = "Marques"
+                },
+                new Contact
+                {
+                    Id = 5,
+                    FirstName = "Ana",
+                    LastName = "Neves"
+                },
+                new Contact
+                {
+                    Id = 6,
+                    FirstName = "Carlos",
+                    LastName = "Dantas"
+                },
+                new Contact
+                {
+                    Id = 7,
+                    FirstName = "Luis",
+                    LastName = "Palma"
+                },
+                new Contact
+                {
+                    Id = 8,
+                    FirstName = "Nuno",
+                    LastName = "Lopes"
+                },
+                new Contact
+                {
+                    Id = 9,
+                    FirstName = "Nuno",
+                    LastName = "Silva"
+                },
+                new Contact
+                {
+                    Id = 10,
+                    FirstName = "João",
+                    LastName = "Tavares"
+                },
+                new Contact
+                {
+                    Id = 11,
+                    FirstName = "Marisa",
+                    LastName = "Pinto"
+                },
+                new Contact
+                {
+                    Id = 12,
+                    FirstName = "Amelia",
+                    LastName = "Silva"
+                },
+                new Contact
+                {
+                    Id = 13,
+                    FirstName = "Tomas",
+                    LastName = "Rego"
                 }
             );
 

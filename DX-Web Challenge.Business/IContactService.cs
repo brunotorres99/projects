@@ -1,4 +1,5 @@
 ﻿using DX_Web_Challenge.Core.Criteria;
+using DX_Web_Challenge.Core.DTO;
 using DX_Web_Challenge.Core.Models;
 using System.Threading.Tasks;
 
@@ -8,8 +9,8 @@ namespace DX_Web_Challenge.Business
     {
         Task<SearchResult<Contact>> GetContacts(ContactCriteria criteria);
         Task<Contact> GeContact(int id);
-        Task<Contact> AddContact(Contact contact);
-        Task UpdateContact(int id, Contact contact);
-        Task DeleteContact(int id);
+        Task<ResponseObject<Contact>> AddContact(Contact contact);
+        Task<ResponseObject<Contact>> UpdateContact(int id, Contact contact);
+        Task<ResponseObject<Contact>> DeleteContact(int id);
     }
 }

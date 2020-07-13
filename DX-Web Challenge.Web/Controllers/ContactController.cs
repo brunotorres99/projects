@@ -1,6 +1,7 @@
 ﻿using DX_Web_Challenge.Core.Criteria;
 using DX_Web_Challenge.Core.DTO;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
@@ -45,17 +46,19 @@ namespace DX_Web_Challenge.Web.Controllers
                 //Paging Size (10,20,50,100)  
                 int pageSize = length != null ? Convert.ToInt32(length) : 0;
                 int skip = start != null ? Convert.ToInt32(start) : 0;
+                int pageNumber = (skip / pageSize) + 1;
 
                 var criteria = new ContactCriteria
                 {
                     SearchQuery = searchValue,
                     PageSize = pageSize,
-                    PageNumber = skip,
+                    PageNumber = pageNumber,
                     SortField = sortColumn,
                     SortOrder = sortColumnDirection
                 };
 
-                var builder = new UriBuilder("http://localhost:5001/api/Contact");
+                var apiBaseURL = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("AppSettings")["ApiBaseURL"];
+                var builder = new UriBuilder($"{apiBaseURL}/api/Contact");
                 var query = HttpUtility.ParseQueryString(builder.Query);
                 query["SearchQuery"] = criteria.SearchQuery;
                 query["PageSize"] = criteria.PageSize?.ToString();

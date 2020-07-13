@@ -1,61 +1,106 @@
 ﻿using DX_Web_Challenge.Core.Criteria;
+using DX_Web_Challenge.Core.DTO;
 using DX_Web_Challenge.Core.Models;
 using DX_Web_Challenge.Data.Repository;
-using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
 namespace DX_Web_Challenge.Business.Services.Impl
 {
     public class GroupService : IGroupService
     {
-        private readonly IGroupRepository _GroupRepository;
+        private readonly IGroupRepository _groupRepository;
         public GroupService(IGroupRepository GroupRepository)
         {
-            _GroupRepository = GroupRepository;
+            _groupRepository = GroupRepository;
         }
 
         public async Task<SearchResult<Group>> GetGroups(GroupCriteria criteria)
         {
-            return await _GroupRepository.GetGroups(criteria);
+            return await _groupRepository.GetGroups(criteria);
         }
 
         public async Task<Group> GeGroup(int id)
         {
-            return await _GroupRepository.FindByIdAsync(id);
+            return await _groupRepository.FindByIdAsync(id);
         }
 
-        public async Task<Group> AddGroup(Group group)
+        public async Task<ResponseObject<Group>> AddGroup(Group group)
         {
-            await _GroupRepository.AddAsync(group);
-            await _GroupRepository.SaveChangesAsync();
+            var response = new ResponseObject<Group>();
+            await Validate();
+            if (response.IsValid == false) return response;
 
-            return group;
+            await _groupRepository.AddAsync(group);
+            await _groupRepository.SaveChangesAsync();
+
+            response.Value = group;
+            return response;
+
+            async Task Validate()
+            {
+                if (string.IsNullOrWhiteSpace(group.Name))
+                {
+                    response.AddMessage("Name", "The Name is required", BusinessMessage.TypeEnum.error);
+                }
+            }
         }
 
-        public async Task UpdateGroup(int id, Group group)
+        public async Task<ResponseObject<Group>> UpdateGroup(int id, Group group)
         {
-            _GroupRepository.Update(group);
+            var response = new ResponseObject<Group>();
+            await Validate();
+            if (response.IsValid == false) return response;
 
-            try
+            _groupRepository.Update(group);
+
+            await _groupRepository.SaveChangesAsync();
+
+            response.Value = group;
+            return response;
+
+            async Task Validate()
             {
-                await _GroupRepository.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException ex)
-            {
-                throw;// todo
+                var savedGroup = await _groupRepository.FindByIdAsync(id);
+                if (savedGroup == null)
+                {
+                    response.AddMessage("Group", "Group not Found", BusinessMessage.TypeEnum.error);
+                    return;
+                }
+
+                if (savedGroup.RowVersion != group.RowVersion)
+                {
+                    response.AddMessage("Group", "This Group is already updated", BusinessMessage.TypeEnum.error);
+                }
+
+                if (string.IsNullOrWhiteSpace(group.Name))
+                {
+                    response.AddMessage("Name", "The Name is required", BusinessMessage.TypeEnum.error);
+                }
             }
         }
 
-        public async Task DeleteGroup(int id)
+        public async Task<ResponseObject<Group>> DeleteGroup(int id)
         {
-            var Group = await _GroupRepository.FindByIdAsync(id);
-            if (Group == null)
-            {
-                // todo
-            }
+            var response = new ResponseObject<Group>();
+            await Validate();
+            if (response.IsValid == false) return response;
 
-            _GroupRepository.Remove(Group);
-            await _GroupRepository.SaveChangesAsync();
+            var group = await _groupRepository.FindByIdAsync(id);
+            _groupRepository.Remove(group);
+            await _groupRepository.SaveChangesAsync();
+
+            response.Value = group;
+            return response;
+
+            async Task Validate()
+            {
+                var savedGroup = await _groupRepository.FindByIdAsync(id);
+                if (savedGroup == null)
+                {
+                    response.AddMessage("Group", "Group not Found", BusinessMessage.TypeEnum.error);
+                    return;
+                }
+            }
         }
     }
 }
