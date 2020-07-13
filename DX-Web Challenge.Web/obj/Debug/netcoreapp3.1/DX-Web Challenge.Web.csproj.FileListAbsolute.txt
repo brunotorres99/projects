@@ -1,8 +1,6 @@
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.csprojAssemblyReference.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.AssemblyInfoInputs.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.AssemblyInfo.cs
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.csproj.CoreCompileInputs.cache
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.RazorAssemblyInfo.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.RazorAssemblyInfo.cs
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -23,8 +21,6 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.TagHelpers.output.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.RazorCoreGenerate.cache
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -39,3 +35,78 @@ C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\st
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.dll
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.pdb
 C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.genruntimeconfig.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.csproj.CoreCompileInputs.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\DX-Web Challenge.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Git\projects\DX-Web Challenge\DX-Web Challenge.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs

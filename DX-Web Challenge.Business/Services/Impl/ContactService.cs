@@ -1,5 +1,5 @@
-﻿using DX_Web_Challenge.Core.Criteria;
-using DX_Web_Challenge.Core.DTO;
+﻿using DX_Web_Challenge.Core;
+using DX_Web_Challenge.Core.Criteria;
 using DX_Web_Challenge.Core.Models;
 using DX_Web_Challenge.Data.Repository;
 using System.Threading.Tasks;
