@@ -15,7 +15,7 @@ namespace DX_Web_Challenge.Data.Repository.Impl
 
         public async Task<Group> FindByIdAsync(int id)
         {
-            return await _context.Groups.FindAsync(id);
+            return await _context.Groups.Include(x => x.ContactGroups).ThenInclude(x => x.Group).FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<SearchResult<Group>> GetGroups(GroupCriteria criteria)
